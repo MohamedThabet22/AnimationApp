@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/sun"
+        android:layout_width="57dp"
+        android:layout_height="71dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/sun" />
+
+    <ImageView
+        android:id="@+id/moon"
+        android:layout_width="46dp"
+        android:layout_height="57dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/moon" />
+
+    <View
+        android:id="@+id/imge_moon"
+        android:layout_width="59dp"
+        android:layout_height="57dp"
+        android:background="@drawable/shape_moon"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/moon"
+        app:layout_constraintEnd_toEndOf="@+id/moon"
+        app:layout_constraintStart_toStartOf="@+id/moon"
+        app:layout_constraintTop_toTopOf="@+id/moon" />
+
+    <View
+        android:id="@+id/imge_sun"
+        android:layout_width="53dp"
+        android:layout_height="62dp"
+        android:background="@drawable/shape_sun"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/sun"
+        app:layout_constraintEnd_toEndOf="@+id/sun"
+        app:layout_constraintStart_toStartOf="@+id/sun"
+        app:layout_constraintTop_toTopOf="@+id/sun" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
